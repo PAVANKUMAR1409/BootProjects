@@ -1,0 +1,54 @@
+org:
+   nit:
+      #Simple properties
+      eno: 1001
+      ename: Pavan
+      
+      #for array property
+      favColor: [black,white,dark]
+#         - green
+#         - blue
+#         - black
+      
+      #for List collection
+      nickNmae: [kanna,chinna,papa] #inline Syntax
+#         - kanna
+#         - papa
+#         - pandu
+      
+      #for Set collection
+      phoneNo: [967643,906363,9494458] #inline syntax
+#         - 96764368
+#         - 90636368
+#         - 94944584
+      
+      #for MAP
+      idDetails: #[aadhar: 61335417, voterId: Abc123, passportNo: 876543] not valid for map and has-a-property
+         aadhar: 61335417
+         voterId: Abc123
+         passportNo: 876543
+      
+      #for HAS-A-PROPERTY
+      company:
+         id: 123
+         name: TCS
+         addrs: Hyd
+         size: 10000
+         
+Spring:
+   main:
+      banner-mode: off
+   config:
+      import: Myapplication.yml 
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
