@@ -1,0 +1,10 @@
+cust:
+  info:
+    custNo: 101
+    custName: SURYA
+    custAddrs: Hyd
+    billAmt: 20000
+#Spring:
+  #config:
+    #import: App.yml
+  
