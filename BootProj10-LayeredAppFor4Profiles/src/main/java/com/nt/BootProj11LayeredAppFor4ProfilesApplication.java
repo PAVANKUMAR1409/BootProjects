@@ -16,29 +16,29 @@ import com.nt.bean.Employee;
 import com.nt.controller.PayrollOperationController;
 
 @SpringBootApplication
-public class BootProj10LayeredAppFor4ProfilesApplication {
+public class BootProj11LayeredAppFor4ProfilesApplication {
 	
-	@Autowired
-	private Environment env;
+//	@Autowired
+//	private Environment env;
 	
-	@Bean
-	@Profile("test")
-	public ComboPooledDataSource createC3P0s()throws Exception{
-		ComboPooledDataSource cds= new ComboPooledDataSource();
-		cds.setDriverClass(env.getProperty("spring.datasource.driver-class-name"));
-		cds.setJdbcUrl(env.getProperty("spring.datasource.url"));
-		cds.setUser(env.getProperty("spring.datasource.username"));
-		cds.setPassword(env.getProperty("spring.datasource.password"));
-		
-		cds.setMinPoolSize(Integer.parseInt(env.getProperty("c3P0.minSize")));
-		cds.setMaxPoolSize(Integer.parseInt(env.getProperty("c3P0.maxSize")));
-		return cds;
-	}
+//	@Bean
+//	@Profile("test")
+//	public ComboPooledDataSource createC3P0s()throws Exception{
+//		ComboPooledDataSource cds= new ComboPooledDataSource();
+//		cds.setDriverClass(env.getProperty("spring.datasource.driver-class-name"));
+//		cds.setJdbcUrl(env.getProperty("spring.datasource.url"));
+//		cds.setUser(env.getProperty("spring.datasource.username"));
+//		cds.setPassword(env.getProperty("spring.datasource.password"));
+//		
+//		cds.setMinPoolSize(Integer.parseInt(env.getProperty("c3P0.minSize")));
+//		cds.setMaxPoolSize(Integer.parseInt(env.getProperty("c3P0.maxSize")));
+//		return cds;
+//	}
  	
 	public static void main(String[] args) {
 		//creating IOC container
 		ApplicationContext ctx=SpringApplication
-				.run(BootProj10LayeredAppFor4ProfilesApplication.class, args);
+				.run(BootProj11LayeredAppFor4ProfilesApplication.class, args);
 		
 		PayrollOperationController controller=ctx.getBean("payroll",PayrollOperationController.class);
 		
