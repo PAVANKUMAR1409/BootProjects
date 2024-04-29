@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: BootProj10-LayeredAppFor4Profiles
-  profiles:
-    active: dev
